@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="hello-text">Hello! I am <b>Ankush Sharma</b></p>
+        My journey into web development started with a curiosity for how things work online, and it quickly transformed into a passion for creating intuitive digital experiences.
+        My goal is to merge aesthetics with functionality, ensuring that every project not only looks great but also performs seamlessly.
+            From an early age, I've been fascinated by how technology impacts our lives, and this passion led me to choose computer science as my field of study.
+      I believe in the power of technology to solve real-world problems, and I'm excited about the opportunities ahead to contribute meaningfully to this field.
+         Thank you, and I'm eager to embark on this journey. 
+        </p>
+    </section>
+    <div class="img-box">
+        <img src="yes.jpg" alt="photo">
+    </div>
+    <section id ="certificate">
+        <h2>EDUCATION</h2>
+<div class="certificate" onclick="animsteaItem(this)">
+    <p>I have done my <b>10<sup>th</sup></b> in 2020 and <b>12<sup>th</sup></b> in 2022 from Saraswati Vidya Mandir , Nehru Nagar, GZB.<br>
+    I have done many things in my school time like<b> sports, presentation ,friendship, leaderdhip, some competition</b> all of these things made me full of confident.
+Currently I am pursuing <b>Btech</b> from <b>AKGEC.(2023-2027)</b> My journey into the realm of Technology began here.During this (2024-27) period I am looking 
+forward to learn new skills and devlop my personality. </p>
+</div>
+    </section>
+    <section id="certificate">
+        <h2>My Achievements</h2>
+        <div class="certificate" onclick="animateItem(this)">
+            <h3><u>Distric Taekwondo</u></h3>
+            <p>I have won <b>gold in Open  Distric Taekwondo Championship</b> & Selection for U.P State which was held on 25 Nov 2018 .<br>This competition was organised by Distric Taekwondo Association Ghaziabad
+        in which I played in Junior (U 48kg). </p>
+        </div>
+        <div class="certificate" onclick="animateItem(this)">
+            <h3><u>Vidya Bharti (State Taekwondo)</u> </h3>
+            <p>After that my school also gave me opportunity to paly the <b>State Taekwondo Championship</b> which was held on 2019 in Keshav Madhav Saraswati Vidya
+                Mandir,Kakod,Bulandsahar.<br>In this comeptitiobn I got second position and<b> won silver medal</b> . </p>
+        </div>
+        <div class="certificate" onclick="animateItem(this)">
+            <h3><U>Maths Olympiad</U></h3>
+            <p>I also<b> won the gold in Maths Oylmpiad</b> which was held in the year 2017.<br>
+            This Olympiad organised by<b> FASTMIND EDUCATION FOUNDATION.</b> </p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <div class = "links">
+        <a href="https://www.instagram.com/sharma.ankush_0908/" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+    </div>
+    <footer> <p>&copy; Ankush Sharma / All Rights Reserved</P>
+    </footer>
+</body>
+</html>
+<script>
+    function animateItem(item) {
+    item.classList.add('animate');
+    setTimeout(() => {
+        item.classList.remove('animate');
+    }, 500);
+}
+
+</script>
